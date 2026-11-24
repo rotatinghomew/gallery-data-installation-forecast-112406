@@ -1,0 +1,109 @@
+{
+  "tables": {
+    "projects": [
+      "project",
+      "venue",
+      "vendor",
+      "shared_team",
+      "decide",
+      "promised",
+      "state"
+    ],
+    "milestones": [
+      "item",
+      "project",
+      "kind",
+      "performer",
+      "claim_cent",
+      "crew_need",
+      "lot",
+      "planned_day"
+    ],
+    "links": [
+      "predecessor",
+      "successor",
+      "kind",
+      "source"
+    ],
+    "acceptance": [
+      "receipt",
+      "item",
+      "state",
+      "day",
+      "received",
+      "fraction",
+      "actor"
+    ],
+    "contracts": [
+      "bill",
+      "projects",
+      "items",
+      "method",
+      "expires",
+      "deposit_cent"
+    ],
+    "payments": [
+      "receipt",
+      "bill",
+      "item",
+      "date",
+      "amount_cent",
+      "state"
+    ],
+    "crew_windows": [
+      "crew",
+      "first",
+      "last",
+      "simultaneous_capacity",
+      "available_after_receipt"
+    ],
+    "options": [
+      "plan",
+      "projects",
+      "open_day",
+      "kind",
+      "main_items",
+      "shares_crew",
+      "approval"
+    ]
+  },
+  "references": [
+    [
+      "projects",
+      "project",
+      "milestones",
+      "project"
+    ],
+    [
+      "milestones",
+      "item",
+      "links",
+      "predecessor"
+    ],
+    [
+      "milestones",
+      "item",
+      "links",
+      "successor"
+    ],
+    [
+      "milestones",
+      "item",
+      "acceptance",
+      "item"
+    ],
+    [
+      "contracts",
+      "bill",
+      "payments",
+      "bill"
+    ]
+  ],
+  "agreement_keys": [
+    "clock",
+    "forecast",
+    "acceptance",
+    "dependencies",
+    "financial"
+  ]
+}
